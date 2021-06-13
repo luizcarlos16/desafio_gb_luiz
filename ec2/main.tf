@@ -103,7 +103,7 @@ resource "aws_security_group" "jvnSG" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-    ingress {
+  ingress {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
@@ -135,7 +135,7 @@ resource "aws_instance" "Desafio_globo" {
   instance_type               = "t2.micro"
   disable_api_termination     = "false"
   key_name                    = "acesso_miami"
-  user_data                   = "${file("user-data.sh")}"
+  user_data                   = file("user-data.sh")
   vpc_security_group_ids      = [aws_security_group.jvnSG.id]
   subnet_id                   = aws_subnet.jvnsn-public.id
   associate_public_ip_address = "true"
