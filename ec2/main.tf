@@ -1,6 +1,4 @@
 #main.tf
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
 
 #CREDENTIALS
 provider "aws" {
