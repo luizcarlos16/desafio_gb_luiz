@@ -11,5 +11,5 @@ sudo systemctl start docker
 sudo chkconfig docker on
 sudo docker pull thecalifornia16/desafio_gb:latest
 sudo docker run --name desafio_gb -d -it -p 80:8000 thecalifornia16/desafio_gb
-sleep 60s
+sleep 30s
 sudo docker container exec desafio_gb sh /app/comentarios.sh
