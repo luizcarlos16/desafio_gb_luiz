@@ -6,11 +6,11 @@ on:
     branches:
       - master
     paths:
-      - /**
+      - ec2/**
   
   pull_request: # [master, next]
     paths:
-      - /**
+      - ec2/**
 
 
 jobs:
