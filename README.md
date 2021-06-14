@@ -38,3 +38,12 @@
                 "sudo docker container exec desafio_gb sh /app/comentarios.sh"
     ```
 - Criado no GitHub Action todo o processo automatizado com Terraform CI do deploy do Ambiente AWS (EC2, VPC, Docker/Imagem e etc...)
+    - GitHub Action está configurado para quando houver alteração dentro da pasta "ec2" criado o pull request e aprovado, inicia o merge automaticamente (o processo de deploy com o Terraform CI via Workflow do Action)
+
+    - Processos Git: 
+        ```
+        git checkout -b fix20
+        git add .
+        git commit -m "Atualizando README.md"
+        git push -u origin fix20
+        ```
