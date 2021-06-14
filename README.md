@@ -32,4 +32,3 @@
                 "sudo docker container exec desafio_gb sh /app/comentarios.sh"
 
 - Criado no GitHub Action todo o processo automatizado com Terraform CI do deploy do Ambiente AWS (EC2, VPC, Docker/Imagem e etc...)
-
